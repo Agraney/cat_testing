@@ -2,241 +2,241 @@ import { Question } from "./types";
 
 export const qaQuestions: Question[] = [
   {
-    id: "QA_1",
-    section: "QA",
-    type: "MCQ",
-    number: 1,
-    text: "If x is a positive real number such that x<sup>8</sup> + (1/x)<sup>8</sup> = 47, then the value of x<sup>9</sup> + (1/x)<sup>9</sup> is:",
-    options: [
-      "40√5",
-      "30√5",
-      "36√5",
-      "34√5"
+    "id": "QA_1",
+    "section": "QA",
+    "type": "TITA",
+    "number": 1,
+    "text": "In a village, the ratio of number of males to females is 5 : 4. The ratio of number of literate males to literate females is 2 : 3. The ratio of the number of illiterate males to illiterate females is 4 : 3. If 3600 males in the village are literate, then the total number of females in the village is"
+  },
+  {
+    "id": "QA_2",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 2,
+    "text": "The average weight of students in a class increases by 600 gm when some new students join the class. If the average weight of the new students is 3 kg more than the average weight of the original students, then the ratio of the number of original students to the number of new students is",
+    "options": [
+      "1 : 4",
+      "1 : 2",
+      "4 : 1",
+      "3 : 1"
     ]
   },
   {
-    id: "QA_2",
-    section: "QA",
-    type: "MCQ",
-    number: 2,
-    text: "Let n and m be two positive integers such that there are exactly 41 integers greater than 8<sup>m</sup> and less than 8<sup>n</sup>, which can be expressed as powers of 2. Then, the smallest possible value of n + m is:",
-    options: [
-      "42",
-      "44",
-      "14",
-      "16"
+    "id": "QA_3",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 3,
+    "text": "For any natural number n, suppose the sum of the first n terms of an arithmetic progression is (n + 2n<sup>2</sup>). If the n<sup>th</sup> term of the progression is divisible by 9, then the smallest possible value of n is",
+    "options": [
+      "9",
+      "4",
+      "7",
+      "8"
     ]
   },
   {
-    id: "QA_3",
-    section: "QA",
-    type: "MCQ",
-    number: 3,
-    text: "For some real numbers a and b, the system of equations x + y = 4 and (a + 5)x + (b<sup>2</sup> - 15)y = 8b has infinitely many solutions for x and y. Then, the maximum possible value of ab is:",
-    options: [
-      "33",
+    "id": "QA_4",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 4,
+    "text": "Let 0 \u2264 a \u2264 x \u2264 100 and f(x) = |x - a| + |x - 100| + |x - a - 50|. Then the maximum value of f(x) becomes 100 when a is equal to",
+    "options": [
       "25",
+      "100",
+      "50",
+      "0"
+    ]
+  },
+  {
+    "id": "QA_5",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 5,
+    "text": "Trains A and B start traveling at the same time towards each other with constant speeds from stations X and Y, respectively. Train A reaches station Y in 10 minutes while train B takes 9 minutes to reach station X after meeting train A. Then the total time taken, in minutes, by train B to travel from station Y to station X is",
+    "options": [
+      "6",
       "15",
-      "55"
+      "10",
+      "12"
     ]
   },
   {
-    id: "QA_4",
-    section: "QA",
-    type: "MCQ",
-    number: 4,
-    text: "For a real number x, if 1/2, log<sub>3</sub>(2<sup>x</sup> - 9)/log<sub>3</sub> 4, and log<sub>5</sub>(2<sup>x</sup> + 17/2)/log<sub>5</sub> 4 are in an arithmetic progression, then the common difference is:",
-    options: [
-      "log<sub>4</sub>(3/2)",
-      "log<sub>4</sub> 7",
-      "log<sub>4</sub>(23/2)",
-      "log<sub>4</sub>(7/2)"
+    "id": "QA_6",
+    "section": "QA",
+    "type": "TITA",
+    "number": 6,
+    "text": "A trapezium ABCD has side AD parallel to BC, \u2220BAD = 90\u00b0, BC = 3 cm and AD = 8 cm. If the perimeter of this trapezium is 36 cm, then its area, in sq. cm, is"
+  },
+  {
+    "id": "QA_7",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 7,
+    "text": "Ankita buys 4 kg cashews, 14 kg peanuts and 6 kg almonds when the cost of 7 kg cashews is the same as that of 30 kg peanuts or 9 kg almonds. She mixes all the three nuts and marks a price for the mixture in order to make a profit of \u20b9 1752. She sells 4 kg of the mixture at this marked price and the remaining at a 20% discount on the marked price, thus making a total profit of \u20b9 744. Then the amount, in rupees, that she had spent in buying almonds is",
+    "options": [
+      "1680",
+      "1176",
+      "2520",
+      "1440"
     ]
   },
   {
-    id: "QA_5",
-    section: "QA",
-    type: "TITA",
-    number: 5,
-    text: "Let n be any natural number such that 5<sup>n-1</sup> < 3<sup>n+1</sup>. Then, the least integer value of m that satisfies 3<sup>n+1</sup> < 2<sup>n+m</sup> for each such n, is:"
+    "id": "QA_8",
+    "section": "QA",
+    "type": "TITA",
+    "number": 8,
+    "text": "Let A be the largest positive integer that divides all the numbers of the form 3<sup>k</sup> + 4<sup>k</sup> + 5<sup>k</sup>, and B be the largest positive integer that divides all the numbers of the form 4<sup>k</sup> + 3(4<sup>k</sup>) + 4<sup>k+2</sup>, where k is any positive integer. Then (A + B) equals"
   },
   {
-    id: "QA_6",
-    section: "QA",
-    type: "TITA",
-    number: 6,
-    text: "The sum of the first two natural numbers, each having 15 factors (including 1 and the number itself), is:"
-  },
-  {
-    id: "QA_7",
-    section: "QA",
-    type: "TITA",
-    number: 7,
-    text: "A quadratic equation x<sup>2</sup> + bx + c = 0 has two real roots. If the difference between the reciprocals of the roots is 1/3, and the sum of the reciprocals of the squares of the roots is 5/9, then the largest possible value of (b + c) is:"
-  },
-  {
-    id: "QA_8",
-    section: "QA",
-    type: "MCQ",
-    number: 8,
-    text: "A merchant purchases a cloth at a rate of Rs.100 per meter and receives 5 cm length of cloth free for every 100 cm length of cloth purchased by him. He sells the same cloth at a rate of Rs.110 per meter but cheats his customers by giving 95 cm length of cloth for every 100 cm length of cloth purchased by the customers. If the merchant provides a 5% discount, the resulting profit earned by him is:",
-    options: [
-      "4.2%",
-      "9.7%",
-      "15.5%",
-      "16%"
+    "id": "QA_9",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 9,
+    "text": "Let a, b, c be non-zero real numbers such that b<sup>2</sup> &lt; 4ac, and f(x) = ax<sup>2</sup> + bx + c. If the set S consists of all integers m such that f(m) &lt; 0, then the set S must necessarily be",
+    "options": [
+      "the set of all positive integers",
+      "the set of all integers",
+      "either the empty set or the set of all integers",
+      "the empty set"
     ]
   },
   {
-    id: "QA_9",
-    section: "QA",
-    type: "MCQ",
-    number: 9,
-    text: "Rahul, Rakshita and Gurmeet, working together, would have taken more than 7 days to finish a job. On the other hand, Rahul and Gurmeet, working together would have taken less than 15 days to finish the job. However, they all worked together for 6 days, followed by Rakshita, who worked alone for 3 more days to finish the job. If Rakshita had worked alone on the job then the number of days she would have taken to finish the job, cannot be:",
-    options: [
-      "20",
-      "17",
-      "16",
-      "21"
+    "id": "QA_10",
+    "section": "QA",
+    "type": "TITA",
+    "number": 10,
+    "text": "The number of ways of distributing 20 identical balloons among 4 children such that each child gets some balloons but no child gets an odd number of balloons, is"
+  },
+  {
+    "id": "QA_11",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 11,
+    "text": "Let a and b be natural numbers. If a<sup>2</sup> + ab + a = 14 and b<sup>2</sup> + ab + b = 28, then (2a + b) equals",
+    "options": [
+      "8",
+      "7",
+      "10",
+      "9"
     ]
   },
   {
-    id: "QA_10",
-    section: "QA",
-    type: "MCQ",
-    number: 10,
-    text: "The population of a town in 2020 was 100000. The population decreased by y% from the year 2020 to 2021, and increased by x% from the year 2021 to 2022, where x and y are two natural numbers. If population in 2022 was greater than the population in 2020 and the difference between x and y is 10, then the lowest possible population of the town in 2021 was:",
-    options: [
-      "72000",
-      "74000",
-      "73000",
-      "75000"
+    "id": "QA_12",
+    "section": "QA",
+    "type": "TITA",
+    "number": 12,
+    "text": "Amal buys 110 kg of syrup and 120 kg of juice, syrup being 20% less costly than juice, per kg. He sells 10 kg of syrup at 10% profit and 20 kg of juice at 20% profit. Mixing the remaining juice and syrup, Amal sells the mixture at \u20b9 308.32 per kg and makes an overall profit of 64%. Then, Amal\u2019s cost price for syrup, in rupees per kg, is"
+  },
+  {
+    "id": "QA_13",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 13,
+    "text": "All the vertices of a rectangle lie on a circle of radius R. If the perimeter of the rectangle is P, then the area of the rectangle is",
+    "options": [
+      "P<sup>2</sup>/16 - R<sup>2</sup>",
+      "P<sup>2</sup>/8 - 2R<sup>2</sup>",
+      "P<sup>2</sup>/2 - 2PR",
+      "P<sup>2</sup>/8 - R<sup>2</sup>/2"
     ]
   },
   {
-    id: "QA_11",
-    section: "QA",
-    type: "MCQ",
-    number: 11,
-    text: "Anil mixes cocoa with sugar in the ratio 3 : 2 to prepare mixture A, and coffee with sugar in the ratio 7 : 3 to prepare mixture B. He combines mixtures A and B in the ratio 2 : 3 to make a new mixture C. If he mixes C with an equal amount of milk to make a drink, then the percentage of sugar in this drink will be:",
-    options: [
-      "17",
-      "16",
-      "21",
-      "24"
+    "id": "QA_14",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 14,
+    "text": "The average of three integers is 13. When a natural number n is included, the average of these four integers remains an odd integer. The minimum possible value of n is",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "1"
     ]
   },
   {
-    id: "QA_12",
-    section: "QA",
-    type: "MCQ",
-    number: 12,
-    text: "There are three persons A, B and C in a room. If a person D joins the room, the average weight of the persons in the room reduces by x kg. Instead of D, if person E joins the room, the average weight of the persons in the room increases by 2x kg. If the weight of E is 12 kg more than that of D, then the value of x is:",
-    options: [
-      "2",
-      "0.5",
+    "id": "QA_15",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 15,
+    "text": "A mixture contains lemon juice and sugar syrup in equal proportion. If a new mixture is created by adding this mixture and sugar syrup in the ratio 1 : 3, then the ratio of lemon juice and sugar syrup in the new mixture is",
+    "options": [
+      "1 : 4",
+      "1 : 5",
+      "1 : 6",
+      "1 : 7"
+    ]
+  },
+  {
+    "id": "QA_16",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 16,
+    "text": "The largest real value of a for which the equation |x + a| + |x - 1| = 2 has an infinite number of solutions for x is",
+    "options": [
+      "-1",
+      "0",
       "1",
-      "1.5"
+      "2"
     ]
   },
   {
-    id: "QA_13",
-    section: "QA",
-    type: "MCQ",
-    number: 13,
-    text: "A boat takes 2 hours to travel downstream a river from port A to port B, and 3 hours to return to port A. Another boat takes a total of 6 hours to travel from port B to port A and return to port B. If the speeds of the boats and the river are constant, then the time, in hours, taken by the slower boat to travel from port A to port B is:",
-    options: [
-      "12(√5 - 2)",
-      "3(3 + √5)",
-      "3(√5 - 1)",
-      "3(3 - √5)"
+    "id": "QA_17",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 17,
+    "text": "In a class of 100 students, 73 like coffee, 80 like tea and 52 like lemonade. It may be possible that some students do not like any of these three drinks. Then the difference between the maximum and minimum possible number of students who like all the three drinks is",
+    "options": [
+      "47",
+      "53",
+      "52",
+      "48"
     ]
   },
   {
-    id: "QA_14",
-    section: "QA",
-    type: "TITA",
-    number: 14,
-    text: "The number of coins collected per week by two coin-collectors A and B are in the ratio 3 : 4. If the total number of coins collected by A in 5 weeks is a multiple of 7, and the total number of coins collected by B in 3 weeks is a multiple of 24, then the minimum possible number of coins collected by A in one week is:"
-  },
-  {
-    id: "QA_15",
-    section: "QA",
-    type: "TITA",
-    number: 15,
-    text: "A fruit seller has a stock of mangoes, bananas and apples with at least one fruit of each type. At the beginning of a day, the number of mangoes make up 40% of his stock. That day, he sells half of the mangoes, 96 bananas and 40% of the apples. At the end of the day, he ends up selling 50% of the fruits. The smallest possible total number of fruits in the stock at the beginning of the day is:"
-  },
-  {
-    id: "QA_16",
-    section: "QA",
-    type: "TITA",
-    number: 16,
-    text: "Gautam and Suhani, working together, can finish a job in 20 days. If Gautam does only 60% of his usual work on a day, Suhani must do 150% of her usual work on that day to exactly make up for it. Then, the number of days required by the faster worker to complete the job working alone is:"
-  },
-  {
-    id: "QA_17",
-    section: "QA",
-    type: "MCQ",
-    number: 17,
-    text: "Let ΔABC be an isosceles triangle such that AB and AC are of equal length. AD is the altitude from A on BC and BE is the altitude from B on AC. If AD and BE intersect at O such that ∠AOB = 105°, then AD/BE equals:",
-    options: [
-      "sin 15°",
-      "cos 15°",
-      "2cos 15°",
-      "2sin 15°"
+    "id": "QA_18",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 18,
+    "text": "Let ABCD be a parallelogram such that the coordinates of its three vertices A, B, C are (1, 1), (3, 4) and (\u22122, 8), respectively. Then, the coordinates of the vertex D are",
+    "options": [
+      "(0, 11)",
+      "(4, 5)",
+      "(\u22123, 4)",
+      "(\u22124, 5)"
     ]
   },
   {
-    id: "QA_18",
-    section: "QA",
-    type: "MCQ",
-    number: 18,
-    text: "A rectangle with the largest possible area is drawn inside a semicircle of radius 2 cm. Then, the ratio of the lengths of the largest to the smallest side of this rectangle is:",
-    options: [
-      "2 : 1",
-      "1 : 1",
-      "√5 : 1",
-      "√2 : 1"
+    "id": "QA_19",
+    "section": "QA",
+    "type": "TITA",
+    "number": 19,
+    "text": "For natural numbers x, y, and z, if xy + yz = 19 and yz + xz = 51, then the minimum possible value of xyz is"
+  },
+  {
+    "id": "QA_20",
+    "section": "QA",
+    "type": "MCQ",
+    "number": 20,
+    "text": "Alex invested his savings in two parts. The simple interest earned on the first part at 15% per annum for 4 years is the same as the simple interest earned on the second part at 12% per annum for 3 years. Then, the percentage of his savings invested in the first part is",
+    "options": [
+      "37.5%",
+      "62.5%",
+      "60%",
+      "40%"
     ]
   },
   {
-    id: "QA_19",
-    section: "QA",
-    type: "TITA",
-    number: 19,
-    text: "In a regular polygon, any interior angle exceeds the exterior angle by 120 degrees. Then, the number of diagonals of this polygon is:"
+    "id": "QA_21",
+    "section": "QA",
+    "type": "TITA",
+    "number": 21,
+    "text": "Pinky is standing in a queue at a ticket counter. Suppose the ratio of the number of persons standing ahead of Pinky to the number of persons standing behind her in the queue is 3 : 5. If the total number of persons in the queue is less than 300, then the maximum possible number of persons standing ahead of Pinky is"
   },
   {
-    id: "QA_20",
-    section: "QA",
-    type: "MCQ",
-    number: 20,
-    text: "The value of 1 + (1 + 1/3)(1/4) + (1 + 1/3 + 1/9)(1/16) + (1 + 1/3 + 1/9 + 1/27)(1/64) + ... is:",
-    options: [
-      "15/13",
-      "27/12",
-      "15/8",
-      "16/11"
-    ]
-  },
-  {
-    id: "QA_21",
-    section: "QA",
-    type: "MCQ",
-    number: 21,
-    text: "Let a<sub>n</sub> = 46 + 8n and b<sub>n</sub> = 98 + 4n be two sequences for natural numbers n ≤ 100. Then, the sum of all terms common to both the sequences is:",
-    options: [
-      "14900",
-      "14798",
-      "15000",
-      "14602"
-    ]
-  },
-  {
-    id: "QA_22",
-    section: "QA",
-    type: "TITA",
-    number: 22,
-    text: "Suppose f(x, y) is a real-valued function such that f(3x + 2y, 2x - 5y) = 19x, for all real numbers x and y. The value of x for which f(x, 2x) = 27, is:"
+    "id": "QA_22",
+    "section": "QA",
+    "type": "TITA",
+    "number": 22,
+    "text": "For any real number x, let [x] be the largest integer less than or equal to x. If \u2211<sub>n=1</sub><sup>N</sup> [1/5 + n/25] = 25 then N is"
   }
 ];

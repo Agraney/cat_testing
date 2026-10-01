@@ -320,95 +320,22 @@ export default function TestPage() {
                   {activeDILRSet.text}
                 </div>
                 
-                {/* HTML DILR diagrams & tables recreation */}
+                {/* HTML DILR diagrams & figures */}
                 {activeDILRSet.hasDiagram && (
-                  <div className="w-full max-w-lg mx-auto bg-slate-900 border border-slate-800 rounded-xl p-6 text-slate-100 mt-6 shadow-lg">
-                    <div className="text-center font-bold mb-4 text-indigo-400">Housing Complex Layout Grid</div>
-                    <div className="grid grid-cols-7 gap-2 items-center text-center">
-                      <div className="col-span-3 border-b border-indigo-500/30 pb-1 font-semibold text-slate-400">Block XX</div>
-                      <div></div>
-                      <div className="col-span-3 border-b border-indigo-500/30 pb-1 font-semibold text-slate-400">Block YY</div>
-
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">Col A</div>
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">Col B</div>
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">Col C</div>
-                      <div className="text-[10px] text-indigo-500 font-extrabold">R<br/>O<br/>A<br/>D</div>
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">Col D</div>
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">Col E</div>
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">Col F</div>
-
-                      {/* Row 1 */}
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">A1</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">B1</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">C1</div>
-                      <div className="h-full bg-slate-850/40 w-full flex items-center justify-center font-bold text-xs text-slate-600 border-l border-r border-slate-800">|</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">D1</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">E1</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">F1</div>
-
-                      {/* Row 2 */}
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">A2</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">B2</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">C2</div>
-                      <div className="h-full bg-slate-850/40 w-full flex items-center justify-center font-bold text-xs text-slate-600 border-l border-r border-slate-800">|</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">D2</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">E2</div>
-                      <div className="bg-slate-800 border border-slate-700 rounded p-2 text-xs font-bold text-white shadow-inner">F2</div>
+                  <div className="w-full mx-auto bg-slate-900 border border-slate-700/60 rounded-xl p-5 text-slate-100 mt-6 shadow-2xl">
+                    <div className="text-center font-bold mb-3 text-indigo-400 text-sm tracking-wide">
+                      Schematic Map of City Metro Lines
                     </div>
-                    <div className="mt-4 bg-slate-850 border border-slate-800 py-2 text-center text-[10px] font-bold text-slate-400 tracking-widest rounded-lg">
-                      &larr; &larr; &larr; MAIN ROAD &rarr; &rarr; &rarr;
+                    <div className="flex justify-center items-center bg-white rounded-lg p-3 overflow-hidden shadow-inner">
+                      <img
+                        src="/metro_map.png"
+                        alt="City Metro Lines Schematic Map"
+                        className="max-w-full h-auto object-contain rounded"
+                      />
                     </div>
-                  </div>
-                )}
-
-                {activeDILRSet.hasTable && (
-                  <div className="overflow-x-auto my-6 border border-slate-850 rounded-xl shadow-lg bg-slate-950">
-                    <table className="w-full text-xs text-left text-slate-300">
-                      <thead className="bg-slate-900 uppercase text-[10px] text-slate-400 border-b border-slate-800">
-                        <tr>
-                          <th className="px-4 py-3 font-bold border-r border-slate-800">Worker Statistic</th>
-                          <th className="px-4 py-3 font-bold">Ullas</th>
-                          <th className="px-4 py-3 font-bold">Vasu</th>
-                          <th className="px-4 py-3 font-bold">Waman</th>
-                          <th className="px-4 py-3 font-bold">Xavier</th>
-                          <th className="px-4 py-3 font-bold">Yusuf</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-slate-850">
-                        <tr>
-                          <td className="px-4 py-3 font-bold text-slate-200 border-r border-slate-850 bg-slate-900/35">Mean Rating</td>
-                          <td className="px-4 py-3">2.2</td>
-                          <td className="px-4 py-3">3.8</td>
-                          <td className="px-4 py-3">3.4</td>
-                          <td className="px-4 py-3">3.6</td>
-                          <td className="px-4 py-3">2.6</td>
-                        </tr>
-                        <tr className="bg-slate-900/10">
-                          <td className="px-4 py-3 font-bold text-slate-200 border-r border-slate-850 bg-slate-900/35">Median Rating</td>
-                          <td className="px-4 py-3">2</td>
-                          <td className="px-4 py-3">4</td>
-                          <td className="px-4 py-3">4</td>
-                          <td className="px-4 py-3">4</td>
-                          <td className="px-4 py-3">3</td>
-                        </tr>
-                        <tr>
-                          <td className="px-4 py-3 font-bold text-slate-200 border-r border-slate-850 bg-slate-900/35">Modal Rating</td>
-                          <td className="px-4 py-3">2</td>
-                          <td className="px-4 py-3">4</td>
-                          <td className="px-4 py-3">5</td>
-                          <td className="px-4 py-3">5</td>
-                          <td className="px-4 py-3">1 and 4</td>
-                        </tr>
-                        <tr className="bg-slate-900/10">
-                          <td className="px-4 py-3 font-bold text-slate-200 border-r border-slate-850 bg-slate-900/35">Range of Rating*</td>
-                          <td className="px-4 py-3">3</td>
-                          <td className="px-4 py-3">3</td>
-                          <td className="px-4 py-3">4</td>
-                          <td className="px-4 py-3">4</td>
-                          <td className="px-4 py-3">3</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div className="text-center text-xs text-slate-400 mt-3 leading-relaxed">
+                      <span className="font-semibold text-slate-300">Legend:</span> Rectangles: Terminal stations (A, B, C, D, M, N, P, Q) &bull; Diamonds: Junction stations (R, S, T, V) &bull; Small circles: Other stations
+                    </div>
                   </div>
                 )}
               </div>

@@ -2,225 +2,271 @@ import { DILRSet, Question } from "./types";
 
 export const dilrSets: DILRSet[] = [
   {
-    id: "set1",
-    title: "DILR Set 1: Visa Processing Office (VPO)",
-    text: "A visa processing office (VPO) accepts visa applications in four categories - US, UK, Schengen, and Others. The applications are scheduled for processing in twenty 15-minute slots starting at 9:00 am and ending at 2:00 pm. Ten applications are scheduled in each slot.\n\nThere are ten counters in the office, four dedicated to US applications, and two each for UK applications, Schengen applications and Others applications. Applicants are called in for processing sequentially on a first-come-first-served basis whenever a counter gets freed for their category. The processing time for an application is the same within each category. But it may vary across the categories. Each US and UK application requires 10 minutes of processing time. Depending on the number of applications in a category and time required to process an application for that category, it is possible that an applicant for a slot may be processed later.\n\nOn a particular day, Ira, Vijay and Nandini were scheduled for Schengen visa processing in that order. They had a 9:15 am slot but entered the VPO at 9:20 am. When they entered the office, exactly six out of the ten counters were either processing applications, or had finished processing one and ready to start processing the next.\n\nMahira and Osman were scheduled in the 9:30 am slot on that day for visa processing in the Others category.\n\nThe following additional information is known about that day.\n1. All slots were full.\n2. The number of US applications was the same in all the slots. The same was true for the other three categories.\n3. 50% of the applications were US applications.\n4. All applicants except Ira, Vijay and Nandini arrived on time.\n5. Vijay was called to a counter at 9:25 am."
+    "id": "set1",
+    "title": "DILR Set 1: Hockey Team Performance",
+    "text": "The following facts are known about the goals scored by these four players only. All the questions refer only to the goals scored by these four players.\n\nThe management of a university hockey team was evaluating performance of four women players - Amla, Bimla, Harita and Sarita for their possible selection in the university team for next year. For this purpose, the management was looking at the number of goals scored by them in the past 8 matches, numbered 1 through 8. The four players together had scored a total of 12 goals in these matches. In the 8 matches, each of them had scored at least one goal. No two players had scored the same total number of goals.\n\n1. Only one goal was scored in every even numbered match.\n2. Harita scored more goals than Bimla.\n3. The highest goal scorer scored goals in exactly 3 matches including Match 4 and Match 8.\n4. Bimla scored a goal in Match 1 and one each in three other consecutive matches.\n5. An equal number of goals were scored in Match 3 and Match 7, which was different from the number of goals scored in either Match 1 or Match 5.\n6. The match in which the highest number of goals was scored was unique and it was not Match 5."
   },
   {
-    id: "set2",
-    title: "DILR Set 2: Housing Complex Grid Layout",
-    text: "The schematic diagram shows 12 rectangular houses in a housing complex. House numbers are mentioned in the rectangles representing the houses. The houses are located in six columns - Column-A through Column-F, and two rows - Row-1 and Row-2. The houses are divided into two blocks - Block XX and Block YY. The diagram also shows two roads, one passing in front of the houses in Row-2 and another between the two blocks.\n\nSome of the houses are occupied. The remaining ones are vacant and are the only ones available for sale.\n\nThe road adjacency value of a house is the number of its sides adjacent to a road. For example, the road adjacency values of C2, F2, and B1 are 2, 1, and 0, respectively. The neighbour count of a house is the number of sides of that house adjacent to occupied houses in the same block. For example, E1 and C1 can have the maximum possible neighbour counts of 3 and 2, respectively.\n\nThe base price of a vacant house is Rs. 10 lakhs if the house does not have a parking space, and Rs. 12 lakhs if it does. The quoted price (in lakhs of Rs.) of a vacant house is calculated as (base price) + 5 × (road adjacency value) + 3 × (neighbour count). The following information is also known.\n1. The maximum quoted price of a house in Block XX is Rs. 24 lakhs. The minimum quoted price of a house in block YY is Rs. 15 lakhs, and one such house is in Column-E.\n2. Row-1 has two occupied houses, one in each block.\n3. Both houses in Column-E are vacant. Each of Column-D and Column-F has at least one occupied house.\n4. There is only one house with parking space in Block YY.",
-    hasDiagram: true
+    "id": "set2",
+    "title": "DILR Set 2: Graduating Students Get-Together",
+    "text": "There are 15 girls and some boys among the graduating students in a class. They are planning a get-together, which can be either a 1-day event, or a 2-day event, or a 3-day event. There are 6 singers in the class, 4 of them are boys. There are 10 dancers in the class, 4 of them are girls. No dancer in the class is a singer.\n\nSome students are not interested in attending the get-together. Those students who are interested in attending a 3-day event are also interested in attending a 2-day event; those who are interested in attending a 2-day event are also interested in attending a 1-day event.\n\nThe following facts are also known:\n1. All the girls and 80% of the boys are interested in attending a 1-day event. 60% of the boys are interested in attending a 2-day event.\n2. Some of the girls are interested in attending a 1-day event, but not a 2-day event; some of the other girls are interested in attending both.\n3. 70% of the boys who are interested in attending a 2-day event are neither singers nor dancers. 60% of the girls who are interested in attending a 2-day event are neither singers nor dancers.\n4. No girl is interested in attending a 3-day event. All male singers and 2 of the dancers are interested in attending a 3-day event.\n5. The number of singers interested in attending a 2-day event is one more than the number of dancers interested in attending a 2-day event."
   },
   {
-    id: "set3",
-    title: "DILR Set 3: Restaurant Gig Worker Ratings",
-    text: "Five restaurants, coded R1, R2, R3, R4 and R5 gave integer ratings to five gig workers - Ullas, Vasu, Waman, Xavier and Yusuf, on a scale of 1 to 5.\n\nThe means of the ratings given by R1, R2, R3, R4 and R5 were 3.4, 2.2, 3.8, 2.8 and 3.4 respectively.\nThe summary statistics of these ratings for the five workers is given in the table below.\n\n* Range of ratings is defined as the difference between the maximum and minimum ratings awarded to a worker.\n\nThe following is partial information about ratings of 1 and 5 awarded by the restaurants to the workers.\n(a) R1 awarded a rating of 5 to Waman, as did R2 to Xavier, R3 to Waman and Xavier, and R5 to Vasu.\n(b) R1 awarded a rating of 1 to Ullas, as did R2 to Waman and Yusuf, and R3 to Yusuf.",
-    hasTable: true
+    "id": "set3",
+    "title": "DILR Set 3: Funding For New Initiatives",
+    "text": "Adhara, Bithi, Chhaya, Dhanavi, Esther, and Fathima are the interviewers in a process that awards funding for new initiatives. Every interviewer individually interviews each of the candidates individually and awards a token only if she recommends funding. A token has a face value of 2, 3, 5, 7, 11, or 13. Each interviewer awards tokens of a single face value only.\n\nOnce all six interviews are over for a candidate, the candidate receives a funding that is Rs.1000 times the product of the face values of all the tokens. For example, if a candidate has tokens with face values 2, 5, and 7, then they get a funding of Rs.1000 \u00d7 (2 \u00d7 5 \u00d7 7) = Rs.70,000.\n\nPragnyaa, Qahira, Rasheeda, Smera, and Tantra were five candidates who received funding. The funds they received, in descending order, were Rs.390,000, Rs.210,000, Rs.165,000, Rs.77,000, and Rs.66,000.\n\nThe following additional facts are known:\n1. Fathima awarded tokens to everyone except Qahira, while Adhara awarded tokens to no one except Pragnyaa.\n2. Rashida received the highest number of tokens that anyone received, but she did not receive one from Esther.\n3. Bithi awarded a token to Smera but not to Qahira, while Dhanavi awarded a token to Qahira but not to Smera."
   },
   {
-    id: "set4",
-    title: "DILR Set 4: Management School Dean Election",
-    text: "Faculty members in a management school can belong to one of four departments - Finance and Accounting (F&A), Marketing and Strategy (M&S), Operations and Quants (O&Q) and Behaviour and Human Resources (B&H). The numbers of faculty members in F&A, M&S, O&Q and B&H departments are 9, 7, 5 and 3 respectively.\n\nProf. Pakrasi, Prof. Qureshi, Prof. Ramaswamy and Prof. Samuel are four members of the school's faculty who were candidates for the post of the Dean of the school. Only one of the candidates was from O&Q.\n\nEvery faculty member, including the four candidates, voted for the post. In each department, all the faculty members who were not candidates voted for the same candidate. The rules for the election are listed below.\n1. There cannot be more than two candidates from a single department.\n2. A candidate cannot vote for himself/herself.\n3. Faculty members cannot vote for a candidate from their own department.\n\nAfter the election, it was observed that Prof. Pakrasi received 3 votes, Prof. Qureshi received 14 votes, Prof. Ramaswamy received 6 votes and Prof. Samuel received 1 vote. Prof. Pakrasi voted for Prof. Ramaswamy, Prof. Qureshi for Prof. Samuel, Prof. Ramaswamy for Prof. Qureshi and Prof. Samuel for Prof. Pakrasi."
+    "id": "set4",
+    "title": "DILR Set 4: City Metro Lines",
+    "text": "Given below is the schematic map of the metro lines in a city with rectangles denoting terminal stations (e.g. A), diamonds denoting junction stations (e.g. R) and small filled-up circles denoting other stations. Each train runs either in east-west or north-south direction, but not both. All trains stop for 2 minutes at each of the junction stations on the way and for 1 minute at each of the other stations. It takes 2 minutes to reach the next station for trains going in east-west direction and 3 minutes to reach the next station for trains going in north-south direction. From each terminal station, the first train starts at 6 am; the last trains leave the terminal stations at midnight. Otherwise, during the service hours, there is metro service every 15 minutes in the north-south lines and every 10 minutes in the east-west lines. A train must rest for at least 15 minutes after completing a trip at the terminal station, before it can undertake the next trip in the reverse direction. (All questions are related to this metro service only. Assume that if someone reaches a station exactly at the time a train is supposed to leave, (s)he can catch that train.)",
+    "hasDiagram": true
   }
 ];
 
 export const dilrQuestions: Question[] = [
   {
-    id: "DILR_1",
-    section: "DILR",
-    type: "TITA",
-    number: 1,
-    setId: "set1",
-    text: "How many UK applications were scheduled on that day?"
-  },
-  {
-    id: "DILR_2",
-    section: "DILR",
-    type: "TITA",
-    number: 2,
-    setId: "set1",
-    text: "What is the maximum possible value of the total time (in minutes, nearest to its integer value) required to process all applications in the Others category on that day?"
-  },
-  {
-    id: "DILR_3",
-    section: "DILR",
-    type: "MCQ",
-    number: 3,
-    setId: "set1",
-    text: "Which of the following is the closest to the time when Nandini’s application process got over?",
-    options: ["9:50 am", "9:37 am", "9:35 am", "9:45 am"]
-  },
-  {
-    id: "DILR_4",
-    section: "DILR",
-    type: "MCQ",
-    number: 4,
-    setId: "set1",
-    text: "Which of the following statements is false?",
-    options: [
-      "The application process of Osman was completed before 9:45 am.",
-      "The application process of Mahira started after Nandini’s.",
-      "The application process of Osman was completed before Vijay’s.",
-      "The application process of Mahira was completed before Nandini’s."
+    "id": "DILR_1",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 1,
+    "setId": "set1",
+    "text": "How many goals were scored in Match 7?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "Cannot be determined"
     ]
   },
   {
-    id: "DILR_5",
-    section: "DILR",
-    type: "MCQ",
-    number: 5,
-    setId: "set1",
-    text: "When did the application processing for all US applicants get over on that day?",
-    options: ["2:05 pm", "2:25 pm", "2:00 pm", "3:40 pm"]
-  },
-  {
-    id: "DILR_6",
-    section: "DILR",
-    type: "TITA",
-    number: 6,
-    setId: "set2",
-    text: "How many houses are vacant in Block XX?"
-  },
-  {
-    id: "DILR_7",
-    section: "DILR",
-    type: "MCQ",
-    number: 7,
-    setId: "set2",
-    text: "Which of the following houses is definitely occupied?",
-    options: ["A1", "D2", "B1", "F2"]
-  },
-  {
-    id: "DILR_8",
-    section: "DILR",
-    type: "MCQ",
-    number: 8,
-    setId: "set2",
-    text: "Which of the following options best describes the number of vacant houses in Row-2?",
-    options: ["Exactly 3", "Either 3 or 4", "Exactly 2", "Either 2 or 3"]
-  },
-  {
-    id: "DILR_9",
-    section: "DILR",
-    type: "TITA",
-    number: 9,
-    setId: "set2",
-    text: "What is the maximum possible quoted price (in lakhs of Rs.) for a vacant house in Column-E?"
-  },
-  {
-    id: "DILR_10",
-    section: "DILR",
-    type: "MCQ",
-    number: 10,
-    setId: "set2",
-    text: "Which house in Block YY has parking space?",
-    options: ["E1", "F2", "E2", "F1"]
-  },
-  {
-    id: "DILR_11",
-    section: "DILR",
-    type: "TITA",
-    number: 11,
-    setId: "set3",
-    text: "How many individual ratings cannot be determined from the above information?"
-  },
-  {
-    id: "DILR_12",
-    section: "DILR",
-    type: "TITA",
-    number: 12,
-    setId: "set3",
-    text: "To how many workers did R2 give a rating of 4?"
-  },
-  {
-    id: "DILR_13",
-    section: "DILR",
-    type: "TITA",
-    number: 13,
-    setId: "set3",
-    text: "What rating did R1 give to Xavier?"
-  },
-  {
-    id: "DILR_14",
-    section: "DILR",
-    type: "TITA",
-    number: 14,
-    setId: "set3",
-    text: "What is the median of the ratings given by R3 to the five workers?"
-  },
-  {
-    id: "DILR_15",
-    section: "DILR",
-    type: "MCQ",
-    number: 15,
-    setId: "set3",
-    text: "Which among the following restaurants gave its median rating to exactly one of the workers?",
-    options: ["R2", "R5", "R4", "R3"]
-  },
-  {
-    id: "DILR_16",
-    section: "DILR",
-    type: "MCQ",
-    number: 16,
-    setId: "set4",
-    text: "Which two candidates can belong to the same department?",
-    options: [
-      "Prof. Pakrasi and Prof. Qureshi",
-      "Prof. Pakrasi and Prof. Samuel",
-      "Prof. Qureshi and Prof. Ramaswamy",
-      "Prof. Ramaswamy and Prof. Samuel"
+    "id": "DILR_2",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 2,
+    "setId": "set1",
+    "text": "Which of the following is the correct sequence of goals scored in matches 1, 3, 5 and 7?",
+    "options": [
+      "5, 1, 0, 1",
+      "3, 1, 2, 1",
+      "3, 2, 1, 2",
+      "4, 1, 2, 1"
     ]
   },
   {
-    id: "DILR_17",
-    section: "DILR",
-    type: "MCQ",
-    number: 17,
-    setId: "set4",
-    text: "Which of the following can be the number of votes that Prof. Qureshi received from a single department?",
-    options: ["7", "6", "8", "9"]
-  },
-  {
-    id: "DILR_18",
-    section: "DILR",
-    type: "MCQ",
-    number: 18,
-    setId: "set4",
-    text: "If Prof. Samuel belongs to B&H, which of the following statements is/are true?\n\n**Statement A:** Prof. Pakrasi belongs to M&S.\n**Statement B:** Prof. Ramaswamy belongs to O&Q.",
-    options: [
-      "Neither statement A nor statement B",
-      "Only statement B",
-      "Only statement A",
-      "Both statements A and B"
+    "id": "DILR_3",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 3,
+    "setId": "set1",
+    "text": "Which of the following statement(s) is/are true?\n\nStatement-1: Amla and Sarita never scored goals in the same match.\nStatement-2: Harita and Sarita never scored goals in the same match.",
+    "options": [
+      "Statement-1 only",
+      "Statement-2 only",
+      "Both the statements",
+      "None of the statements"
     ]
   },
   {
-    id: "DILR_19",
-    section: "DILR",
-    type: "MCQ",
-    number: 19,
-    setId: "set4",
-    text: "What best can be concluded about the candidate from O&Q?",
-    options: [
-      "It was Prof. Samuel.",
-      "It was either Prof. Ramaswamy or Prof. Samuel.",
-      "It was Prof. Ramaswamy.",
-      "It was either Prof. Pakrasi or Prof. Qureshi."
+    "id": "DILR_4",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 4,
+    "setId": "set1",
+    "text": "Which of the following statement(s) is/are false?\n\nStatement-1: In every match at least one player scored a goal.\nStatement-2: No two players scored goals in the same number of matches.",
+    "options": [
+      "None of the statements",
+      "Statement-1 only",
+      "Both the statements",
+      "Statement-2 only"
     ]
   },
   {
-    id: "DILR_20",
-    section: "DILR",
-    type: "MCQ",
-    number: 20,
-    setId: "set4",
-    text: "Which of the following statements is/are true?\n\n**Statement A:** Non-candidates from M&S voted for Prof. Qureshi.\n**Statement B:** Non-candidates from F&A voted for Prof. Qureshi.",
-    options: [
-      "Both statements A and B",
-      "Only statement B",
-      "Only statement A",
-      "Neither statement A nor statement B"
+    "id": "DILR_5",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 5,
+    "setId": "set1",
+    "text": "If Harita scored goals in one more match as compared to Sarita, which of the following statement(s) is/are necessarily true?\n\nStatement-1: Amla scored goals in consecutive matches.\nStatement-2: Sarita scored goals in consecutive matches.",
+    "options": [
+      "Statement-2 only",
+      "None of the statements",
+      "Statement-1 only",
+      "Both the statements"
     ]
+  },
+  {
+    "id": "DILR_6",
+    "section": "DILR",
+    "type": "TITA",
+    "number": 6,
+    "setId": "set2",
+    "text": "How many boys are there in the class?"
+  },
+  {
+    "id": "DILR_7",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 7,
+    "setId": "set2",
+    "text": "Which of the following can be determined from the given information?\n\nI. The number of boys who are interested in attending a 1-day event and are neither dancers nor singers.\nII. The number of female dancers who are interested in attending a 1-day event.",
+    "options": [
+      "Only I",
+      "Neither I nor II",
+      "Only II",
+      "Both I and II"
+    ]
+  },
+  {
+    "id": "DILR_8",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 8,
+    "setId": "set2",
+    "text": "What fraction of the class are interested in attending a 2-day event?",
+    "options": [
+      "7/10",
+      "7/13",
+      "9/13",
+      "2/3"
+    ]
+  },
+  {
+    "id": "DILR_9",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 9,
+    "setId": "set2",
+    "text": "What BEST can be concluded about the number of male dancers who are interested in attending a 1-day event?",
+    "options": [
+      "5 or 6",
+      "6",
+      "5",
+      "4 or 6"
+    ]
+  },
+  {
+    "id": "DILR_10",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 10,
+    "setId": "set2",
+    "text": "How many female dancers are interested in attending a 2-day event?",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "Cannot be determined"
+    ]
+  },
+  {
+    "id": "DILR_11",
+    "section": "DILR",
+    "type": "TITA",
+    "number": 11,
+    "setId": "set3",
+    "text": "How many tokens did Qahira receive?"
+  },
+  {
+    "id": "DILR_12",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 12,
+    "setId": "set3",
+    "text": "Who among the following definitely received a token from Bithi but not from Dhanavi?",
+    "options": [
+      "Pragnyaa",
+      "Rasheeda",
+      "Qahira",
+      "Tantra"
+    ]
+  },
+  {
+    "id": "DILR_13",
+    "section": "DILR",
+    "type": "TITA",
+    "number": 13,
+    "setId": "set3",
+    "text": "How many tokens did Chhaya award?"
+  },
+  {
+    "id": "DILR_14",
+    "section": "DILR",
+    "type": "TITA",
+    "number": 14,
+    "setId": "set3",
+    "text": "How many tokens did Smera receive?"
+  },
+  {
+    "id": "DILR_15",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 15,
+    "setId": "set3",
+    "text": "Which of the following could be the amount of funding that Tantra received?\n(a) Rs. 66,000\n(b) Rs. 165,000",
+    "options": [
+      "Neither (a) nor (b)",
+      "Only (b)",
+      "Only (a)",
+      "Both (a) and (b)"
+    ]
+  },
+  {
+    "id": "DILR_16",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 16,
+    "setId": "set4",
+    "text": "If Hari is ready to board a train at 8:05 am from station M, then when is the earliest that he can reach station N?",
+    "options": [
+      "9:11 am",
+      "9:06 am",
+      "9:01 am",
+      "9:13 am"
+    ]
+  },
+  {
+    "id": "DILR_17",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 17,
+    "setId": "set4",
+    "text": "If Priya is ready to board a train at 10:25 am from station T, then when is the earliest that she can reach station S?",
+    "options": [
+      "11:12 am",
+      "11:22 am",
+      "11:07 am",
+      "11:28 am"
+    ]
+  },
+  {
+    "id": "DILR_18",
+    "section": "DILR",
+    "type": "MCQ",
+    "number": 18,
+    "setId": "set4",
+    "text": "Haripriya is expected to reach station S late. What is the latest time by which she must be ready to board at station S if she must reach station B before 1 am via station R?",
+    "options": [
+      "11:39 pm",
+      "11:49 pm",
+      "11:35 pm",
+      "11:43 pm"
+    ]
+  },
+  {
+    "id": "DILR_19",
+    "section": "DILR",
+    "type": "TITA",
+    "number": 19,
+    "setId": "set4",
+    "text": "What is the minimum number of trains that are required to provide the service on the AB line (considering both north and south directions)?"
+  },
+  {
+    "id": "DILR_20",
+    "section": "DILR",
+    "type": "TITA",
+    "number": 20,
+    "setId": "set4",
+    "text": "What is the minimum number of trains that are required to provide the service in this city?"
   }
 ];
